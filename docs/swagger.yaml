@@ -1,0 +1,62 @@
+info:
+  contact: {}
+paths:
+  /api/v1/car:
+    post:
+      consumes:
+      - application/json
+      description: Метод добавления авто.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Метод добавления авто.
+  /api/v1/car/{id}:
+    get:
+      description: Метод получения авто.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Метод получения авто.
+    post:
+      consumes:
+      - application/json
+      description: Метод обновления авто.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Метод обновления авто.
+  /api/v1/car/{regNum}:
+    delete:
+      description: Метод удаления авто.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Метод удаления авто.
+  /api/v1/car/list:
+    get:
+      description: Метод получения списка авто.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Метод получения списка авто.
+swagger: "2.0"

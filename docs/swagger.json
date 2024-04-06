@@ -1,0 +1,97 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/api/v1/car": {
+            "post": {
+                "description": "Метод добавления авто.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Метод добавления авто.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/car/list": {
+            "get": {
+                "description": "Метод получения списка авто.",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Метод получения списка авто.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/car/{id}": {
+            "get": {
+                "description": "Метод получения авто.",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Метод получения авто.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Метод обновления авто.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Метод обновления авто.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/car/{regNum}": {
+            "delete": {
+                "description": "Метод удаления авто.",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Метод удаления авто.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
